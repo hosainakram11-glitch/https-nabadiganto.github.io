@@ -1,50 +1,140 @@
-body {
-    font-family: "Noto Sans Bengali", Arial, sans-serif;
+/* Google Font (Bangla friendly) */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600;700&display=swap');
+
+* {
     margin: 0;
-    background: #f4f6f8;
-    color: #333;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Noto Sans Bengali', sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+    line-height: 1.7;
+}
+
+/* ===== Header ===== */
 .header {
-    background: #0a4d68;
-    color: white;
+    background: linear-gradient(135deg, #0a7c5a, #0fb9b1);
+    color: #fff;
     text-align: center;
-    padding: 30px 20px;
+    padding: 30px 15px;
 }
 
 .logo {
-    width: 120px;
+    width: 100px;
     height: auto;
     margin-bottom: 10px;
 }
 
+.header h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-size: 16px;
+    opacity: 0.95;
+}
+
+/* ===== Navigation ===== */
 nav {
-    background: #088395;
-    padding: 10px;
-    text-align: center;
+    background: #063f32;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav a {
-    color: white;
-    margin: 10px;
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    padding: 12px 18px;
+    font-size: 15px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #0fb9b1;
+    color: #000;
+}
+
+/* ===== Main Content ===== */
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 25px 15px;
 }
 
 section {
-    background: white;
-    margin: 20px;
+    background: #fff;
+    margin-bottom: 25px;
     padding: 25px;
     border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
-h2 {
-    color: #0a4d68;
+section h2 {
+    color: #0a7c5a;
+    margin-bottom: 15px;
+    font-size: 26px;
+    border-left: 5px solid #0fb9b1;
+    padding-left: 10px;
 }
 
+section h3 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    color: #063f32;
+    font-size: 20px;
+}
+
+section p {
+    margin-bottom: 10px;
+    font-size: 15.5px;
+}
+
+/* ===== Lists ===== */
+ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* ===== Oath Highlight ===== */
+#oath {
+    background: #e8f9f4;
+    border: 2px dashed #0fb9b1;
+}
+
+#oath strong {
+    color: #063f32;
+}
+
+/* ===== Footer (optional) ===== */
 footer {
-    background: #0a4d68;
-    color: white;
+    background: #063f32;
+    color: #fff;
     text-align: center;
     padding: 15px;
+    font-size: 14px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 26px;
+    }
+
+    nav a {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    section h2 {
+        font-size: 22px;
+    }
 }

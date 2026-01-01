@@ -1,0 +1,50 @@
+body {
+    font-family: "Noto Sans Bengali", Arial, sans-serif;
+    margin: 0;
+    background: #f4f6f8;
+    color: #333;
+}
+
+.header {
+    background: #0a4d68;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+nav {
+    background: #088395;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    background: white;
+    margin: 20px;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #0a4d68;
+}
+
+footer {
+    background: #0a4d68;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
